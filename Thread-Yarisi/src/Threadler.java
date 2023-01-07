@@ -13,6 +13,9 @@ public class Threadler implements Runnable {
     private ArrayList<Integer> oddNumbers = new ArrayList<>();
     private ArrayList<Integer> evenNumbers = new ArrayList<>();
 
+    public Threadler() {
+    }
+    
     @Override
     public void run() {
         synchronized (LOCK) {
